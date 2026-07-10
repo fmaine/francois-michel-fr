@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>François Michel · Praticien du Tarot Rationnel à Paris</title>
+<meta name="description" content="Praticien du Tarot Rationnel à Paris et en visioconférence. Une méthode structurée, sans croyance, pour clarifier une décision professionnelle ou personnelle difficile.">
+<link rel="canonical" href="https://francois-michel.fr/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0c0a'/%3E%3Ctext x='50%25' y='50%25' font-family='Georgia%2C serif' font-size='13' font-weight='400' fill='%23c8a96e' text-anchor='middle' dominant-baseline='central' letter-spacing='1'%3EFM%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="François Michel · Praticien du Tarot Rationnel à Paris">
+<meta property="og:description" content="Une méthode structurée, sans croyance, pour clarifier une décision professionnelle ou personnelle difficile.">
+<meta property="og:url" content="https://francois-michel.fr/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="François Michel · Tarot Rationnel">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="François Michel · Praticien du Tarot Rationnel à Paris">
+<meta name="twitter:description" content="Une méthode structurée, sans croyance, pour clarifier une décision difficile.">
+
+<!-- Données structurées : Personne / Service local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "François Michel · Praticien du Tarot Rationnel",
+  "url": "https://francois-michel.fr/",
+  "email": "fm@francois-michel.fr",
+  "areaServed": "Paris, France",
+  "founder": {
+    "@type": "Person",
+    "name": "François Michel",
+    "jobTitle": "Praticien du Tarot Rationnel"
+  },
+  "description": "Praticien du Tarot Rationnel à Paris et en visioconférence, une méthode structurée pour clarifier les décisions difficiles.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "FR"
+  }
+}
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SGHBSXM7D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4SGHBSXM7D');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Palettes fixes */
+  --dark-bg:       #0e0c0a;
+  --dark-bg-soft:  #1c1a16;
+  --dark-text:     #f0ebe0;
+  --dark-text-dim: #c8bfaf;
+  --dark-muted:    #7a7060;
+  --dark-border:   rgba(200,169,110,0.12);
+  --dark-grid:     rgba(200,169,110,0.1);
+
+  --light-bg:      #f5f0e8;
+  --light-bg-soft: #ede7d8;
+  --light-text:    #1a1510;
+  --light-text-dim:#2e2820;
+  --light-muted:   #6a5e4a;
+  --light-border:  rgba(100,75,40,0.15);
+  --light-grid:    rgba(100,75,40,0.12);
+
+  --gold:          #c8a96e;
+  --gold-on-dark:  #c8a96e;
+  --gold-on-light: #7a5828;
+  --gold-dim-dark: #7a6040;
+  --gold-dim-light:#9a7240;
+
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --caps:  'Cinzel', serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ── THÈMES ── */
+.s-dark {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+.s-dark .eyebrow        { color: var(--gold-dim-dark); }
+.s-dark .rule,
+.s-dark .rule-left      { background: var(--gold-dim-dark); }
+.s-dark .section-title  { color: var(--dark-text); }
+.s-dark .section-title em { color: var(--gold-on-dark); }
+
+.s-light {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+.s-light .eyebrow        { color: var(--gold-dim-light); }
+.s-light .rule,
+.s-light .rule-left      { background: var(--gold-dim-light); }
+.s-light .section-title  { color: var(--light-text); }
+.s-light .section-title em { color: var(--gold-on-light); }
+
+/* ── UTILITY ── */
+.container { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
+.eyebrow {
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.rule {
+  width: 48px; height: 0.5px;
+  margin: 0 auto 2.5rem;
+}
+.rule-left {
+  width: 48px; height: 0.5px;
+  margin: 0 0 2.5rem;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(200,169,110,0.15);
+  background: rgba(14,12,10,0.93);
+  backdrop-filter: blur(8px);
+}
+.nav-logo {
+  font-family: var(--caps);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-decoration: none;
+}
+.nav-cta {
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border: 0.5px solid rgba(200,169,110,0.4);
+  padding: 0.5rem 1.25rem;
+  transition: all 0.25s;
+}
+.nav-cta:hover {
+  background: rgba(200,169,110,0.08);
+  border-color: var(--gold);
+}
+
+/* ── SECTION BASE ── */
+section { padding: 6rem 0; }
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+/* ── HERO (dark) ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 6rem;
+  position: relative;
+  background: var(--dark-bg);
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 40%, rgba(200,169,110,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner { max-width: 640px; position: relative; }
+.hero-monogram {
+  font-family: var(--caps);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--gold-dim-dark);
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.hero-monogram::before,
+.hero-monogram::after {
+  content: '';
+  width: 32px; height: 0.5px;
+  background: var(--gold-dim-dark);
+}
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-text);
+}
+.hero-title em { font-style: italic; color: var(--gold-on-dark); }
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+  color: var(--dark-muted);
+  margin: 1.75rem 0 3rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+.hero-location {
+  font-family: var(--caps);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--gold-dim-dark);
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  opacity: 0.4;
+}
+.hero-scroll span {
+  font-family: var(--caps);
+  font-size: 8px; letter-spacing: 0.2em;
+  color: var(--gold);
+}
+.hero-scroll-line {
+  width: 0.5px; height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollDown 2s ease-in-out infinite;
+}
+@keyframes scrollDown {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* ── SITUATIONS (light) ── */
+#situations {
+  background: var(--light-bg);
+}
+.situations-para {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: var(--light-text-dim);
+  font-weight: 300;
+}
+.situations-para p { margin-bottom: 1.25rem; }
+.situations-para p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+  color: var(--gold-on-light);
+  font-size: 1.25rem;
+}
+
+/* ── MÉTHODE ── */
+.methode-sub {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--dark-muted);
+  margin-top: 0.5rem;
+}
+.methode-intro {
+  max-width: 620px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: var(--dark-text-dim);
+  font-weight: 300;
+}
+.methode-intro p { margin-bottom: 1.1rem; }
+.methode-intro p:last-child { margin-bottom: 0; }
+.methode-intro em { font-style: italic; color: var(--dark-text); }
+
+/* ── PRINCIPES (dark) ── */
+#approche {
+  background: var(--dark-bg-soft);
+}
+/* ── À PROPOS (light) ── */
+#apropos {
+  background: var(--light-bg);
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+.about-identity { text-align: center; }
+.about-monogram {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(100,75,40,0.3);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.about-monogram-text {
+  font-family: var(--caps);
+  font-size: 22px; font-weight: 400;
+  color: var(--gold-on-light);
+  letter-spacing: 0.1em;
+}
+.about-name {
+  font-family: var(--caps);
+  font-size: 11px; letter-spacing: 0.18em;
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+.about-role {
+  font-size: 0.92rem;
+  color: var(--gold-dim-light);
+  font-style: italic;
+}
+.about-text p {
+  font-size: 1.25rem;
+  color: var(--light-text-dim);
+  line-height: 1.9;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.about-text p:last-child { margin-bottom: 0; }
+.about-text em { font-style: italic; color: var(--gold-on-light); }
+
+/* ── MÉTHODE BLOCS ── */
+.methode-blocs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+.methode-question {
+  border-top: 0.5px solid rgba(200,169,110,0.15);
+  padding-top: 2.5rem;
+}
+.methode-bloc-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gold-on-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+.methode-bloc p,
+.methode-question p {
+  font-size: 1.25rem;
+  color: var(--dark-text-dim);
+  line-height: 1.85;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+.methode-bloc p:last-child,
+.methode-question p:last-child { margin-bottom: 0; }
+.methode-conclusion {
+  text-align: center;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--gold-light);
+  line-height: 1.5;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 0.5px solid rgba(200,169,110,0.15);
+}
+
+/* ── DÉMARCHE (dark) ── */
+#offres {
+  background: var(--dark-bg);
+}
+.demarche-text {
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: var(--dark-text-dim);
+  font-weight: 300;
+}
+.demarche-text p { margin-bottom: 1.25rem; }
+.demarche-text p:last-child { margin-bottom: 0; }
+
+/* ── TÉMOIGNAGES (dark) ── */
+#temoignages {
+  background: var(--dark-bg-soft);
+}
+.temoignages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+.temoignage-card {
+  border: 0.5px solid var(--dark-border);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.temoignage-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--dark-text-dim);
+  font-weight: 300;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+.temoignage-author {
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-dim-dark);
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--dark-border);
+}
+@media (max-width: 640px) {
+  .temoignages-grid { grid-template-columns: 1fr; }
+}
+
+/* ── CTA (light) ── */
+.cta-section {
+  text-align: center;
+  padding: 7rem 0;
+}
+.cta-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--light-text);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.02em;
+}
+.cta-body {
+  font-size: 1.2rem;
+  color: var(--light-muted);
+  max-width: 420px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+.cta-btn {
+  display: inline-block;
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--light-bg);
+  background: var(--gold-on-light);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.cta-btn:hover { background: #5a3e18; }
+.cta-note {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gold-dim-light);
+  font-style: italic;
+  margin-top: 1.25rem;
+}
+
+/* ── FOOTER (dark) ── */
+footer {
+  background: var(--dark-bg);
+  border-top: 0.5px solid rgba(200,169,110,0.1);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+footer p {
+  font-family: var(--caps);
+  font-size: 9px; letter-spacing: 0.18em;
+  color: var(--gold-dim-dark);
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .methode-blocs { grid-template-columns: 1fr; }
+  .methode-question { grid-column: 1; }
+  .about-content { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-identity { text-align: left; display: flex; align-items: center; gap: 1.5rem; }
+  .about-monogram { margin: 0; flex-shrink: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">François Michel</a>
+  <div style="display:flex; align-items:center; gap:1.75rem;">
+    <a href="#temoignages" style="font-family: var(--caps); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dark-text-dim); text-decoration: none;">Témoignages</a>
+    <a href="blog-index.html" style="font-family: var(--caps); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dark-text-dim); text-decoration: none;">Blog</a>
+    <a href="mailto:fm@francois-michel.fr" class="nav-cta">Prendre contact</a>
+  </div>
+</nav>
+
+<!-- HERO - fond sombre -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-monogram">FM</div>
+    <h1 class="hero-title">
+      Praticien du<br><em>Tarot Rationnel</em>
+    </h1>
+    <p class="hero-subtitle">Voir clair.<br>Décider juste.<br>Avancer en accord avec soi-même.</p>
+    <span class="hero-location">Paris &nbsp;·&nbsp; Visioconférence</span>
+  </div>
+  <div class="hero-scroll">
+    <span>Découvrir</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- SITUATIONS - fond crème, texte sombre -->
+<section id="situations" class="s-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Pourquoi</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Agir avec clarté, en accord avec soi-même.</h2>
+    </div>
+    <div class="situations-para reveal">
+      <p>Comprendre les décisions qui s'offrent à nous, celles qu'on n'a pas encore prises, ou qu'on a déjà prises sans s'en rendre compte. Identifier ce qui freine, ce qui ouvre. Et trouver le chemin vers une décision qui nous ressemble.</p>
+      <p>Le Tarot Rationnel éclaire notre présent et les chemins encore invisibles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE - fond sombre -->
+<section id="approche" class="s-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">L'approche</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Une méthode, pas une croyance</h2>
+      <p class="methode-sub">Pour choisir sereinement son chemin</p>
+    </div>
+    <div class="methode-blocs reveal">
+      <div class="methode-bloc" style="grid-column: 1 / -1; border-bottom: 0.5px solid rgba(200,169,110,0.15); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <h3 class="methode-bloc-title">Le tarot éclaire le présent.</h3>
+        <p>Loin des pratiques divinatoires, les symboles du tarot stimulent notre inconscient et nous accompagnent dans un chemin de conscience. Un espace pour trouver en nous les réponses à nos questions et mettre en lumière les opportunités d'action qui s'offrent à nous aujourd'hui.</p>
+      </div>
+      <div class="methode-bloc">
+        <h3 class="methode-bloc-title">L'inconscient sait avant vous.</h3>
+        <p>Votre cerveau traite en permanence une quantité massive d'informations, bien plus que ce que votre conscience peut gérer. Il filtre, simplifie, et parfois met de côté ce qui pourrait vous perturber. Résultat : une partie de ce que vous savez sur votre situation, vos blocages, vos désirs réels ; inaccessible. Pas perdue. Juste enfouie.</p>
+      </div>
+      <div class="methode-bloc">
+        <h3 class="methode-bloc-title">Les cartes forcent un angle inattendu.</h3>
+        <p>Les cartes sont tirées au hasard, et c'est précisément pour ça qu'elles sont utiles. Si on parle librement, on revient toujours aux mêmes mots, aux mêmes cadres. La carte impose un symbole que vous n'auriez pas choisi. Ce frottement entre le symbole et votre question fait émerger ce qu'on ne regardait pas encore.</p>
+      </div>
+      <div class="methode-bloc">
+        <h3 class="methode-bloc-title">Mon rôle n'est pas de lire les cartes. C'est de vous lire.</h3>
+        <p>Ce que j'observe, c'est votre réaction au symbole, ce que vous dites, ce que vous ne dites pas, ce qui change. La carte ouvre un espace. Je lis ce qui s'y passe, je vous le renvoie, et vous faites le reste.</p>
+      </div>
+      <div class="methode-question">
+        <h3 class="methode-bloc-title">Une question bien posée.</h3>
+        <p>Le tarot fonctionne avec des questions ouvertes. "Où en suis-je dans ma vie professionnelle ?" "Que penser de ma relation aujourd'hui ?" La première étape de la séance est souvent là : transformer ensemble votre question en quelque chose d'ouvert, de juste, qui vous ressemble. C'est déjà le début du travail.</p>
+        <p>Ensuite le tarot pose d'autres questions, sous un angle inattendu, qui vous surprend et vous parle en même temps. Ce frottement entre le symbole et votre question fait remonter ce que vous savez déjà, sans encore pouvoir le formuler.</p>
+      </div>
+    </div>
+    <p class="methode-conclusion reveal">Les réponses sont en vous.<br>Le tarot crée les conditions pour les entrevoir.</p>
+  </div>
+</section>
+
+<!-- À PROPOS - fond crème, texte sombre -->
+<section id="apropos" class="s-light">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-identity reveal">
+        <div class="about-monogram">
+          <span class="about-monogram-text">FM</span>
+        </div>
+        <p class="about-name">François Michel</p>
+        <p class="about-role">Praticien du Tarot Rationnel<br>Photographe · Paris</p>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">À propos</span>
+        <div class="rule-left"></div>
+        <p>Pendant 35 ans, j'ai pris des décisions que je ne pouvais confier à personne autour de moi. Pas par manque de confiance, parce que certaines questions ne se posent pas à voix haute dans une organisation.</p>
+        <p>En parallèle, j'ai appris à regarder autrement. Photographe de la vie quotidienne à Montmartre, je passe beaucoup de temps à observer les gens sans qu'ils le sachent, à chercher dans un geste, une posture, une lumière, ce qui est vrai avant d'être dit.</p>
+        <p>C'est la même chose en séance. Ce que je fais, ce n'est pas interpréter des cartes, c'est lire ce que vous m'apportez avant que vous l'ayez formulé. Le <em>Tarot Rationnel</em> est l'outil que j'aurais voulu avoir à mes côtés dans mes années de dirigeant : pas un oracle, pas un thérapeute, un espace pour penser sans filtre ce qu'on n'ose pas dire autrement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÉMARCHE - fond sombre -->
+<section id="offres" class="s-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">La démarche</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Une séance pensée pour vous</h2>
+    </div>
+    <div class="demarche-text reveal">
+      <p>Chaque séance est unique, parce que chaque situation l'est.</p>
+      <p>Mais elles partagent toutes le même fil : poser la question, laisser les cartes ouvrir un espace, et lire ensemble ce qui émerge. Un chemin de conscience vers les réponses qui sont déjà en vous.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG TEASER - fond crème, texte sombre -->
+<section id="blog-teaser" class="s-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Le blog</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Pour aller plus loin</h2>
+    </div>
+    <div class="reveal" style="max-width:640px; margin:0 auto; display:flex; flex-direction:column; gap:1.75rem;">
+      <a href="article-clarifier-decision-professionnelle.html" style="text-decoration:none; color:inherit; border-bottom:0.5px solid var(--light-border); padding-bottom:1.75rem;">
+        <p style="font-family:var(--serif); font-size:1.15rem; margin-bottom:0.5rem;">Comment clarifier une décision professionnelle difficile</p>
+        <p style="font-size:0.95rem; color:var(--light-muted);">Pourquoi les listes avantages/inconvénients ne suffisent pas, et ce qui aide réellement à trancher.</p>
+      </a>
+      <a href="article-tarot-rationnel-et-tarot-divinatoire.html" style="text-decoration:none; color:inherit; border-bottom:0.5px solid var(--light-border); padding-bottom:1.75rem;">
+        <p style="font-family:var(--serif); font-size:1.15rem; margin-bottom:0.5rem;">Tarot rationnel et tarot divinatoire</p>
+        <p style="font-size:0.95rem; color:var(--light-muted);">Une différence de posture, pas de matériel, et pourquoi elle change tout dans le déroulé d'une séance.</p>
+      </a>
+      <a href="article-tarot-sans-y-croire.html" style="text-decoration:none; color:inherit; border-bottom:0.5px solid var(--light-border); padding-bottom:1.75rem;">
+        <p style="font-family:var(--serif); font-size:1.15rem; margin-bottom:0.5rem;">Peut-on utiliser le tarot sans y croire ?</p>
+        <p style="font-size:0.95rem; color:var(--light-muted);">Ce que le Tarot Rationnel exige réellement de vous, et pourquoi le scepticisme n'est pas un obstacle.</p>
+      </a>
+      <a href="article-tarot-outil-de-coaching.html" style="text-decoration:none; color:inherit; border-bottom:0.5px solid var(--light-border); padding-bottom:1.75rem;">
+        <p style="font-family:var(--serif); font-size:1.15rem; margin-bottom:0.5rem;">Le tarot comme outil de coaching : pour qui, pour quoi</p>
+        <p style="font-size:0.95rem; color:var(--light-muted);">Ce que le Tarot Rationnel apporte à un parcours professionnel, et ses limites honnêtes.</p>
+      </a>
+      <a href="article-reconversion-apres-40-ans.html" style="text-decoration:none; color:inherit; border-bottom:0.5px solid var(--light-border); padding-bottom:1.75rem;">
+        <p style="font-family:var(--serif); font-size:1.15rem; margin-bottom:0.5rem;">Se reconvertir après 40 ans : comment savoir si c'est le bon moment</p>
+        <p style="font-size:0.95rem; color:var(--light-muted);">Pourquoi ce moment est difficile à évaluer seul, et ce qui aide vraiment à trancher.</p>
+      </a>
+      <a href="article-solitude-dirigeant.html" style="text-decoration:none; color:inherit;">
+        <p style="font-family:var(--serif); font-size:1.15rem; margin-bottom:0.5rem;">La solitude du dirigeant face aux décisions qu'on ne peut confier à personne</p>
+        <p style="font-size:0.95rem; color:var(--light-muted);">Un problème différent des autres décisions difficiles, et ce qui aide vraiment.</p>
+      </a>
+      <a href="blog-index.html" style="align-self:center; margin-top:0.5rem; font-family: var(--caps); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-on-light);">Voir tous les articles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES - fond sombre -->
+<section id="temoignages" class="s-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Témoignages</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Ce qu'ils en ont retiré</h2>
+    </div>
+    <div class="temoignages-grid reveal">
+      <div class="temoignage-card">
+        <p class="temoignage-quote">« Je suis arrivée avec des préoccupations quant à ma vie professionnelle, et François Michel m'a grandement aidée grâce à son tirage, sa bienveillance et sa justesse. Les cartes ont révélé avec une grande clarté les blocages sur lesquels je devais me concentrer, et je suis repartie avec de vraies pistes de réflexion et un éclaircissement incroyable. Un grand merci ! »</p>
+        <p class="temoignage-author">Thaïs, Paris</p>
+      </div>
+      <div class="temoignage-card">
+        <p class="temoignage-quote">« François Michel a proposé de m'aider à éclaircir mes projets de reconversion professionnelle en s'appuyant sur l'usage du tarot rationnel. La méthode est intéressante car elle conjugue à la fois la réflexion, l'intuition et la contingence. Il y a ce qui arrive et ce que l'on choisit d'en faire. J'étais assez perplexe au départ. Pourtant, cette conjonction entre le hasard et la liberté qui nous est donnée de faire des choix m'a rappelé que nous étions acteurs de nos existences. J'y vois plus clair : je sais à la fois vers où aller et comment y aller, sans tout remettre précisément au hasard. Merci François pour cette découverte. »</p>
+        <p class="temoignage-author">Dimitri, Paris</p>
+      </div>
+      <div class="temoignage-card">
+        <p class="temoignage-quote">« La réalité était juste devant moi, et pourtant je n'arrivais pas à la voir. Cette séance de tarot m'a ouvert les yeux sur une évidence qui m'a évité une grosse erreur. Merci infiniment, François. »</p>
+        <p class="temoignage-author">Miranda, Paris</p>
+      </div>
+      <div class="temoignage-card">
+        <p class="temoignage-quote">« J'ai croisé François par hasard et je lui ai parlé d'un partenariat que j'étais en train de monter avec ma société. Il m'a proposé de poser la question au tarot — ce qui m'a surpris et dérouté, moi qui ne crois absolument pas à ce genre de choses. Ce qui en est ressorti était bluffant : une liste de très bonnes questions à poser à mon partenaire, des questions qui semblaient évidentes mais auxquelles je n'avais absolument pas pensé. »</p>
+        <p class="temoignage-author">David, Vincennes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA - fond crème, texte sombre -->
+<section class="cta-section s-light" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="cta-title">Une question sans réponse. Ou simplement le besoin de savoir où vous en êtes.</h2>
+      <p class="cta-body">C'est l'occasion de découvrir comment le Tarot Rationnel peut vous aider à voir en vous.</p>
+      <a href="mailto:fm@francois-michel.fr" class="cta-btn">Écrire à François</a>
+      <span class="cta-note">Réponse sous 48h · Paris ou visioconférence</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER - fond sombre -->
+<footer>
+  <div class="container">
+    <p>© 2026 François Michel &nbsp;·&nbsp; Praticien du Tarot Rationnel &nbsp;·&nbsp; Paris</p>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

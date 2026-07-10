@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · François Michel, Praticien du Tarot Rationnel</title>
+<meta name="description" content="Articles sur le Tarot Rationnel, la clarification des décisions, et l'introspection guidée. Par François Michel, praticien à Paris.">
+<link rel="canonical" href="https://francois-michel.fr/blog-index.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog · François Michel, Praticien du Tarot Rationnel">
+<meta property="og:description" content="Articles sur le Tarot Rationnel, la clarification des décisions, et l'introspection guidée.">
+<meta property="og:url" content="https://francois-michel.fr/blog-index.html">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="François Michel · Tarot Rationnel">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0c0a'/%3E%3Ctext x='50%25' y='50%25' font-family='Georgia%2C serif' font-size='13' font-weight='400' fill='%23c8a96e' text-anchor='middle' dominant-baseline='central' letter-spacing='1'%3EFM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --dark-bg:       #0e0c0a;
+  --dark-bg-soft:  #1c1a16;
+  --dark-text:     #f0ebe0;
+  --dark-text-dim: #c8bfaf;
+  --dark-muted:    #7a7060;
+  --dark-border:   rgba(200,169,110,0.12);
+
+  --light-bg:      #f5f0e8;
+  --light-bg-soft: #ede7d8;
+  --light-text:    #1a1510;
+  --light-text-dim:#2e2820;
+  --light-muted:   #6a5e4a;
+  --light-border:  rgba(100,75,40,0.15);
+
+  --gold:          #c8a96e;
+  --gold-on-dark:  #c8a96e;
+  --gold-on-light: #7a5828;
+  --gold-dim-dark: #7a6040;
+  --gold-dim-light:#9a7240;
+
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --caps:  'Cinzel', serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+.s-dark { background: var(--dark-bg); color: var(--dark-text); }
+.s-dark .eyebrow { color: var(--gold-dim-dark); }
+.s-dark .rule, .s-dark .rule-left { background: var(--gold-dim-dark); }
+
+.s-light { background: var(--light-bg); color: var(--light-text); }
+.s-light .eyebrow { color: var(--gold-dim-light); }
+.s-light .rule, .s-light .rule-left { background: var(--gold-dim-light); }
+
+.container { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
+.eyebrow {
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.rule { width: 48px; height: 0.5px; margin: 0 auto 2.5rem; }
+.rule-left { width: 48px; height: 0.5px; margin: 0 0 2.5rem; }
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(200,169,110,0.15);
+  background: rgba(14,12,10,0.93);
+  backdrop-filter: blur(8px);
+}
+.nav-logo {
+  font-family: var(--caps);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-decoration: none;
+}
+.nav-blog-link {
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+}
+.nav-cta {
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border: 0.5px solid rgba(200,169,110,0.4);
+  padding: 0.5rem 1.25rem;
+  transition: all 0.25s;
+}
+.nav-cta:hover { background: rgba(200,169,110,0.08); border-color: var(--gold); }
+
+/* PAGE HEADER (dark) */
+.page-header {
+  padding: 9rem 0 4rem;
+  text-align: center;
+}
+.page-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--dark-text);
+  margin-bottom: 1.25rem;
+}
+.page-intro {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--dark-muted);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* POST LIST (light) */
+section#posts { background: var(--light-bg); padding: 5rem 0 7rem; }
+.post-list { display: flex; flex-direction: column; }
+.post-row {
+  display: block;
+  padding: 2.75rem 0;
+  border-top: 0.5px solid var(--light-border);
+  text-decoration: none;
+  color: inherit;
+}
+.post-row:last-child { border-bottom: 0.5px solid var(--light-border); }
+.post-row h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0 0 0.6rem;
+  color: var(--light-text);
+}
+.post-row p {
+  font-size: 1.05rem;
+  color: var(--light-muted);
+  margin: 0 0 0.9rem;
+  line-height: 1.65;
+}
+.read-more {
+  font-family: var(--caps);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-on-light);
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-bg);
+  border-top: 0.5px solid rgba(200,169,110,0.1);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+footer p {
+  font-family: var(--caps);
+  font-size: 9px; letter-spacing: 0.18em;
+  color: var(--gold-dim-dark);
+}
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+@media (max-width: 640px) {
+  .page-header { padding: 8rem 0 3rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">François Michel</a>
+  <div style="display:flex; align-items:center; gap:1.75rem;">
+    <a href="blog-index.html" class="nav-blog-link">Blog</a>
+    <a href="mailto:fm@francois-michel.fr" class="nav-cta">Prendre contact</a>
+  </div>
+</nav>
+
+<section class="s-dark page-header">
+  <div class="container">
+    <span class="eyebrow">Blog</span>
+    <h1 class="page-title">Pour aller plus loin</h1>
+    <p class="page-intro">Des réflexions sur le Tarot Rationnel, la clarification des décisions, et ce qui aide vraiment à y voir clair.</p>
+  </div>
+</section>
+
+<section id="posts" class="s-light">
+  <div class="container">
+    <div class="post-list">
+      <a class="post-row reveal" href="article-clarifier-decision-professionnelle.html">
+        <h2>Comment clarifier une décision professionnelle difficile</h2>
+        <p>Pourquoi les listes avantages/inconvénients ne suffisent pas, et ce qui aide réellement à trancher.</p>
+        <span class="read-more">Lire l'article →</span>
+      </a>
+      <a class="post-row reveal" href="article-tarot-rationnel-et-tarot-divinatoire.html">
+        <h2>Tarot rationnel et tarot divinatoire</h2>
+        <p>Une différence de posture, pas de matériel, et pourquoi elle change tout dans le déroulé d'une séance.</p>
+        <span class="read-more">Lire l'article →</span>
+      </a>
+      <a class="post-row reveal" href="article-tarot-sans-y-croire.html">
+        <h2>Peut-on utiliser le tarot sans y croire ?</h2>
+        <p>Ce que le Tarot Rationnel exige réellement de vous, et pourquoi le scepticisme n'est pas un obstacle.</p>
+        <span class="read-more">Lire l'article →</span>
+      </a>
+      <a class="post-row reveal" href="article-tarot-outil-de-coaching.html">
+        <h2>Le tarot comme outil de coaching : pour qui, pour quoi</h2>
+        <p>Ce que le Tarot Rationnel apporte à un parcours professionnel, et ses limites honnêtes.</p>
+        <span class="read-more">Lire l'article →</span>
+      </a>
+      <a class="post-row reveal" href="article-reconversion-apres-40-ans.html">
+        <h2>Se reconvertir après 40 ans : comment savoir si c'est le bon moment</h2>
+        <p>Pourquoi ce moment est difficile à évaluer seul, et ce qui aide vraiment à trancher.</p>
+        <span class="read-more">Lire l'article →</span>
+      </a>
+      <a class="post-row reveal" href="article-solitude-dirigeant.html">
+        <h2>La solitude du dirigeant face aux décisions qu'on ne peut confier à personne</h2>
+        <p>Un problème différent des autres décisions difficiles, et ce qui aide vraiment.</p>
+        <span class="read-more">Lire l'article →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 François Michel &nbsp;·&nbsp; Praticien du Tarot Rationnel &nbsp;·&nbsp; Paris</p>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
