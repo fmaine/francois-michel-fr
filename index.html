@@ -407,6 +407,50 @@ section { padding: 6rem 0; }
 .demarche-text p { margin-bottom: 1.25rem; }
 .demarche-text p:last-child { margin-bottom: 0; }
 
+/* ── GUIDE GRATUIT (light) ── */
+#guide-gratuit {
+  background: var(--light-bg);
+}
+.guide-form-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+.guide-intro {
+  font-size: 1.05rem;
+  color: var(--light-text-dim);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+.guide-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.guide-form input[type="email"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--serif);
+  font-size: 1rem;
+  background: var(--light-bg-soft);
+  border: 0.5px solid var(--light-border);
+  border-radius: 2px;
+  color: var(--light-text);
+}
+.guide-form input[type="email"]::placeholder {
+  color: var(--light-muted);
+}
+.guide-honeypot {
+  display: none !important;
+}
+.guide-form .cta-btn {
+  border: none;
+  cursor: pointer;
+}
+
 /* ── TÉMOIGNAGES (dark) ── */
 #temoignages {
   background: var(--dark-bg-soft);
@@ -628,6 +672,28 @@ footer p {
     <div class="demarche-text reveal">
       <p>Chaque séance est unique, parce que chaque situation l'est.</p>
       <p>Mais elles partagent toutes le même fil : poser la question, laisser les cartes ouvrir un espace, et lire ensemble ce qui émerge. Un chemin de conscience vers les réponses qui sont déjà en vous.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE GRATUIT - fond crème, texte sombre -->
+<section id="guide-gratuit" class="s-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Ressource gratuite</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Trois questions à se poser <em>avant une décision importante</em></h2>
+    </div>
+    <div class="guide-form-wrap reveal">
+      <p class="guide-intro">Un guide court, à garder sous la main la prochaine fois qu'une décision professionnelle résiste à l'analyse.</p>
+      <form class="guide-form" method="POST" action="https://33239dd5.sibforms.com/serve/MUIFALrzGjiJqO0QZQntm6SkVN2bunY7eVCZiyX5aOkNEbjhc08ksR1bZGTrqgiqdaH5p2vJUjZzVE3q39lC5XR0z6CbYgq-0gacD7yIkzJHNLTpLMR5-X4hUQpP2a69gb87jLHCBL1PGpz03G3DovRSXgenPZnCHpCCoOQbajTljCIUA0O22l8QwD2qU0-sDbSq-t147lq_ix4fNA==">
+        <input type="email" name="EMAIL" placeholder="Votre adresse email" required>
+        <!-- Piège anti-spam Brevo : doit rester vide et invisible, ne pas supprimer -->
+        <input type="text" name="email_address_check" value="" class="guide-honeypot" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="locale" value="fr">
+        <button type="submit" class="cta-btn">Recevoir le guide</button>
+      </form>
+      <span class="cta-note">Aucun spam. Désinscription possible à tout moment.</span>
     </div>
   </div>
 </section>
