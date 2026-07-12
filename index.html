@@ -676,28 +676,6 @@ footer p {
   </div>
 </section>
 
-<!-- GUIDE GRATUIT - fond crème, texte sombre -->
-<section id="guide-gratuit" class="s-light">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="eyebrow">Ressource gratuite</span>
-      <div class="rule"></div>
-      <h2 class="section-title">Trois questions à se poser <em>avant une décision importante</em></h2>
-    </div>
-    <div class="guide-form-wrap reveal">
-      <p class="guide-intro">Un guide court, à garder sous la main la prochaine fois qu'une décision professionnelle résiste à l'analyse.</p>
-      <form class="guide-form" method="POST" action="https://33239dd5.sibforms.com/serve/MUIFALrzGjiJqO0QZQntm6SkVN2bunY7eVCZiyX5aOkNEbjhc08ksR1bZGTrqgiqdaH5p2vJUjZzVE3q39lC5XR0z6CbYgq-0gacD7yIkzJHNLTpLMR5-X4hUQpP2a69gb87jLHCBL1PGpz03G3DovRSXgenPZnCHpCCoOQbajTljCIUA0O22l8QwD2qU0-sDbSq-t147lq_ix4fNA==">
-        <input type="email" name="EMAIL" placeholder="Votre adresse email" required>
-        <!-- Piège anti-spam Brevo : doit rester vide et invisible, ne pas supprimer -->
-        <input type="text" name="email_address_check" value="" class="guide-honeypot" tabindex="-1" autocomplete="off">
-        <input type="hidden" name="locale" value="fr">
-        <button type="submit" class="cta-btn">Recevoir le guide</button>
-      </form>
-      <span class="cta-note">Aucun spam. Désinscription possible à tout moment.</span>
-    </div>
-  </div>
-</section>
-
 <!-- BLOG TEASER - fond crème, texte sombre -->
 <section id="blog-teaser" class="s-light">
   <div class="container">
@@ -760,6 +738,28 @@ footer p {
   </div>
 </section>
 
+<!-- GUIDE GRATUIT - fond crème, texte sombre -->
+<section id="guide-gratuit" class="s-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Ressource gratuite</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Trois questions à se poser <em>avant une décision importante</em></h2>
+    </div>
+    <div class="guide-form-wrap reveal">
+      <p class="guide-intro">Un guide court, à garder sous la main la prochaine fois qu'une décision professionnelle résiste à l'analyse.</p>
+      <form class="guide-form" method="POST" action="https://33239dd5.sibforms.com/serve/MUIFALrzGjiJqO0QZQntm6SkVN2bunY7eVCZiyX5aOkNEbjhc08ksR1bZGTrqgiqdaH5p2vJUjZzVE3q39lC5XR0z6CbYgq-0gacD7yIkzJHNLTpLMR5-X4hUQpP2a69gb87jLHCBL1PGpz03G3DovRSXgenPZnCHpCCoOQbajTljCIUA0O22l8QwD2qU0-sDbSq-t147lq_ix4fNA==">
+        <input type="email" name="EMAIL" placeholder="Votre adresse email" required>
+        <!-- Piège anti-spam Brevo : doit rester vide et invisible, ne pas supprimer -->
+        <input type="text" name="email_address_check" value="" class="guide-honeypot" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="locale" value="fr">
+        <button type="submit" class="cta-btn">Recevoir le guide</button>
+      </form>
+      <span class="cta-note">Aucun spam. Désinscription possible à tout moment.</span>
+    </div>
+  </div>
+</section>
+
 <!-- CTA - fond crème, texte sombre -->
 <section class="cta-section s-light" id="contact">
   <div class="container">
@@ -789,6 +789,167 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<!-- POPUP D'INSCRIPTION — se déclenche au scroll (30% de la page) -->
+<style>
+  #guide-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 21, 16, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1.5rem;
+  }
+  #guide-popup-overlay.active {
+    display: flex;
+  }
+  #guide-popup-box {
+    background: var(--light-bg);
+    max-width: 420px;
+    width: 100%;
+    padding: 2.75rem 2.25rem 2.25rem;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  }
+  #guide-popup-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--caps);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--light-muted);
+  }
+  #guide-popup-box .eyebrow {
+    font-family: var(--caps);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim-light);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+  #guide-popup-box h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--light-text);
+    margin: 0 0 1rem;
+    line-height: 1.3;
+  }
+  #guide-popup-box h3 em {
+    color: var(--gold-on-light);
+    font-style: italic;
+  }
+  #guide-popup-box p.intro {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: var(--light-text-dim);
+    margin: 0 0 1.5rem;
+    line-height: 1.6;
+  }
+  #guide-popup-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    align-items: center;
+  }
+  #guide-popup-box input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    background: var(--light-bg-soft);
+    border: 0.5px solid var(--light-border);
+    border-radius: 2px;
+    color: var(--light-text);
+  }
+  #guide-popup-box .guide-honeypot {
+    display: none !important;
+  }
+  #guide-popup-box button[type="submit"] {
+    font-family: var(--caps);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--light-bg);
+    background: var(--gold-on-light);
+    border: none;
+    padding: 0.85rem 1.75rem;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%;
+  }
+</style>
+
+<div id="guide-popup-overlay">
+  <div id="guide-popup-box">
+    <button id="guide-popup-close" aria-label="Fermer">FERMER ✕</button>
+    <span class="eyebrow">Ressource gratuite</span>
+    <h3>Trois questions à se poser <em>avant une décision importante</em></h3>
+    <p class="intro">Un guide court, à garder sous la main la prochaine fois qu'une décision professionnelle résiste à l'analyse.</p>
+    <form method="POST" action="https://33239dd5.sibforms.com/serve/MUIFALrzGjiJqO0QZQntm6SkVN2bunY7eVCZiyX5aOkNEbjhc08ksR1bZGTrqgiqdaH5p2vJUjZzVE3q39lC5XR0z6CbYgq-0gacD7yIkzJHNLTpLMR5-X4hUQpP2a69gb87jLHCBL1PGpz03G3DovRSXgenPZnCHpCCoOQbajTljCIUA0O22l8QwD2qU0-sDbSq-t147lq_ix4fNA==">
+      <input type="email" name="EMAIL" placeholder="Votre adresse email" required>
+      <input type="text" name="email_address_check" value="" class="guide-honeypot" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="locale" value="fr">
+      <button type="submit">Recevoir le guide</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function () {
+  var SCROLL_THRESHOLD = 0.30; // 30%
+  var STORAGE_KEY = 'guidePopupShown';
+  var shown = false;
+
+  function alreadyShown() {
+    return sessionStorage.getItem(STORAGE_KEY) === '1';
+  }
+  function markShown() {
+    sessionStorage.setItem(STORAGE_KEY, '1');
+  }
+
+  function showPopup() {
+    if (shown || alreadyShown()) return;
+    shown = true;
+    markShown();
+    document.getElementById('guide-popup-overlay').classList.add('active');
+  }
+  function hidePopup() {
+    document.getElementById('guide-popup-overlay').classList.remove('active');
+  }
+
+  function checkScroll() {
+    if (shown || alreadyShown()) return;
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+    var percent = scrollTop / docHeight;
+    if (percent >= SCROLL_THRESHOLD) {
+      showPopup();
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll, { passive: true });
+
+  document.getElementById('guide-popup-close').addEventListener('click', hidePopup);
+  document.getElementById('guide-popup-overlay').addEventListener('click', function (e) {
+    if (e.target === this) hidePopup();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') hidePopup();
+  });
+})();
 </script>
 
 </body>
